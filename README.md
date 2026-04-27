@@ -1,7 +1,9 @@
 <p align="center">
   <img src="assets/banner.png" alt="Antiflow Banner" width="100%">
-  <br>
-  <b>go against the flow of vibecoding</b>
+</p>
+
+<p align="center">
+  <sub>go against the flow of vibecoding</sub>
 </p>
 
 # Antiflow
