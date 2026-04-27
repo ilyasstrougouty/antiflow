@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Antiflow Banner">
+  ![Antiflow Banner](assets/banner.png)
 </p>
 
 <p align="center">
