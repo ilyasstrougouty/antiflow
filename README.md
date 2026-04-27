@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Antiflow Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/ilyasstrougouty/antiflow/main/assets/banner.png" alt="Antiflow Banner" width="100%">
 </p>
 
 <p align="center">
