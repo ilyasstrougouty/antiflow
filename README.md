@@ -1,6 +1,8 @@
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/ilyasstrougouty/antiflow@main/assets/image_clean.png" alt="Antiflow Banner" width="100%">
-  <h3>go against the flow of vibecoding</h3>
+  <img src="https://cdn.jsdelivr.net/gh/ilyasstrougouty/antiflow@main/assets/logo.png" alt="Antiflow Logo" width="150" />
+  <h1>antiflow</h1>
+  <p><b>go against the flow of vibecoding</b></p>
+  <br />
 </div>
 
 # Antiflow
