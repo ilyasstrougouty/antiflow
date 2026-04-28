@@ -25,11 +25,20 @@ It scaffolds boilerplate. It configures environments. It **refuses** to write yo
 
 ## 📥 Installation
 
+**For Cursor, Cline, Windsurf & other IDE Agents:**
 ```bash
 npx skills add ilyasstrougouty/antiflow
 ```
 
-Alternatively, copy `SKILL.md` into your AI's custom instructions or project context.
+**For Claude Code CLI (Mac / Linux):**
+```bash
+mkdir -p ~/.claude/skills/antiflow && curl -fsSL https://raw.githubusercontent.com/ilyasstrougouty/antiflow/main/SKILL.md -o ~/.claude/skills/antiflow/SKILL.md
+```
+
+**For Claude Code CLI (Windows):**
+```powershell
+mkdir -Force "$HOME\.claude\skills\antiflow"; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ilyasstrougouty/antiflow/main/SKILL.md" -OutFile "$HOME\.claude\skills\antiflow\SKILL.md"
+```
 
 ## 🚀 Activation
 
