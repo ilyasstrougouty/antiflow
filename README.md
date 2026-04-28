@@ -25,20 +25,18 @@ It scaffolds boilerplate. It configures environments. It **refuses** to write yo
 
 ## 📥 Installation
 
-**For Cursor, Cline, Windsurf & other IDE Agents:**
-```bash
-npx skills add ilyasstrougouty/antiflow
-```
+Pick your agent. One command. Done.
 
-**For Claude Code CLI (Mac / Linux):**
-```bash
-mkdir -p ~/.claude/skills/antiflow && curl -fsSL https://raw.githubusercontent.com/ilyasstrougouty/antiflow/main/SKILL.md -o ~/.claude/skills/antiflow/SKILL.md
-```
-
-**For Claude Code CLI (Windows):**
-```powershell
-mkdir -Force "$HOME\.claude\skills\antiflow"; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ilyasstrougouty/antiflow/main/SKILL.md" -OutFile "$HOME\.claude\skills\antiflow\SKILL.md"
-```
+| Agent | Install |
+| --- | --- |
+| **Claude Code** | `claude plugin marketplace add ilyasstrougouty/antiflow && claude plugin install antiflow@antiflow` |
+| **Codex** | Clone repo → `/plugins` → Search "Antiflow" → Install |
+| **Gemini CLI** | `gemini extensions install https://github.com/ilyasstrougouty/antiflow` |
+| **Cursor** | `npx skills add ilyasstrougouty/antiflow -a cursor` |
+| **Windsurf** | `npx skills add ilyasstrougouty/antiflow -a windsurf` |
+| **Copilot** | `npx skills add ilyasstrougouty/antiflow -a github-copilot` |
+| **Cline** | `npx skills add ilyasstrougouty/antiflow -a cline` |
+| **Any other** | `npx skills add ilyasstrougouty/antiflow` |
 
 ## 🚀 Activation
 
