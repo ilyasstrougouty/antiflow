@@ -25,8 +25,16 @@ It scaffolds boilerplate. It configures environments. It **refuses** to write yo
 
 ## 📥 Installation
 
-1. Copy `SKILL.md` into your AI's context.
-2. Command: **"Activate the Antiflow protocol."**
+```bash
+npx skills add ilyasstrougouty/antiflow
+```
+
+Alternatively, copy `SKILL.md` into your AI's custom instructions or project context.
+
+## 🚀 Activation
+
+Once installed, trigger the protocol by saying:
+**"Activate the Antiflow protocol."**
 
 ## 🎛️ Configuration
 
