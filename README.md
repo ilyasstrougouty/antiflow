@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/logo.png" alt="Antiflow Logo" width="150" />
   <h1>antiflow</h1>
-  <p><b>go against the flow of vibecoding</b></p>
+  <blockquote><b>Vibecoding is a skill issue. Antiflow is the fix.</b></blockquote>
   <br />
 </div>
 
