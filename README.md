@@ -29,7 +29,7 @@ Pick your agent. One command. Done.
 
 | Agent | Install |
 | --- | --- |
-| **Claude Code** | `claude plugin marketplace add ilyasstrougouty/antiflow && claude plugin install antiflow@antiflow` |
+| **Claude Code** | `mkdir -p ~/.claude/skills/antiflow && curl -fsSL https://raw.githubusercontent.com/ilyasstrougouty/antiflow/main/SKILL.md -o ~/.claude/skills/antiflow/SKILL.md` |
 | **Codex** | Clone repo → `/plugins` → Search "Antiflow" → Install |
 | **Gemini CLI** | `gemini extensions install https://github.com/ilyasstrougouty/antiflow` |
 | **Cursor** | `npx skills add ilyasstrougouty/antiflow -a cursor` |
