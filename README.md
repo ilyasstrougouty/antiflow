@@ -23,14 +23,15 @@ It scaffolds boilerplate. It configures environments. It **refuses** to write yo
 4. **Ticket Queue**. Antiflow centralizes all stubs into a `TODO.md` file.
 5. **Refusal**. Ask the AI to complete your assigned tasks. It will refuse.
 
-## 📥 Installation
+## 🚀 Usage
 
-Pick your agent. One command. Done.
+### 1. Installation
+Pick your agent and run the corresponding command in your terminal. This will install the `SKILL.md` file into your agent's correct directory.
 
 | Agent | Install |
 | --- | --- |
 | **Claude Code** | `npx skills add ilyasstrougouty/antiflow -a claude-code` |
-| **Codex** | Clone repo → `/plugins` → Search "Antiflow" → Install |
+| **Google Antigravity** | `npx skills add ilyasstrougouty/antiflow -a antigravity` |
 | **Gemini CLI** | `gemini extensions install https://github.com/ilyasstrougouty/antiflow` |
 | **Cursor** | `npx skills add ilyasstrougouty/antiflow -a cursor` |
 | **Windsurf** | `npx skills add ilyasstrougouty/antiflow -a windsurf` |
@@ -38,14 +39,12 @@ Pick your agent. One command. Done.
 | **Cline** | `npx skills add ilyasstrougouty/antiflow -a cline` |
 | **Any other** | `npx skills add ilyasstrougouty/antiflow` |
 
-## 🚀 Activation
+### 2. Activation
+Once installed, open your AI agent and start a new chat by saying:
+> **"Activate the Antiflow protocol."**
 
-Once installed, trigger the protocol by saying:
-**"Activate the Antiflow protocol."**
-
-## 🎛️ Configuration
-
-Before scaffolding, provide these parameters:
+### 3. Configuration
+The AI will intercept your request and ask for the following parameters before it writes any code:
 
 | Parameter | Options | Default | Description |
 |-----------|---------|---------|-------------|
@@ -54,6 +53,9 @@ Before scaffolding, provide these parameters:
 | `PROJECT` | *String* | **Required** | Brief description of the project. |
 | `STACK` | *String* / `no preference` | Inferred | Target language or framework. |
 | `AI_ASSISTANCE` | `0%` / `50%` / `100%` | `0%` | Ratio of domain logic the AI will write. |
+
+### 4. Build
+The AI will scaffold the project, generate a `TODO.md` file, and assign the core business logic to **you**. If you try to ask the AI to complete your assigned tickets, it will refuse.
 
 ---
 **Get ready to write some code.**

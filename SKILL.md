@@ -1,6 +1,6 @@
 ---
 name: antiflow
-description: Reclaim developer flow by scaffolding boilerplate and assigning core business logic to the human developer.
+description: Prevents the agent from writing core business logic. Use this when the user says "Activate Antiflow" or asks to scaffold a project while preserving human tasks.
 ---
 
 # ANTIFLOW PROTOCOL ACTIVATED
