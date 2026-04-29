@@ -3,9 +3,9 @@
   <h1>antiflow</h1>
   <blockquote><b>Vibecoding is a skill issue. Antiflow is the fix.</b></blockquote>
   <br />
-  <a href="https://github.com/ilyasstrougouty/antiflow/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT" /></a>
-  <a href="https://github.com/ilyasstrougouty/antiflow/stargazers"><img src="https://img.shields.io/github/stars/ilyasstrougouty/antiflow?style=social" alt="Stars" /></a>
-  <a href="https://www.npmjs.com/package/skills"><img src="https://img.shields.io/badge/npx-skills-black" alt="npx skills" /></a>
+  <a href="https://github.com/ilyasstrougouty/antiflow/stargazers"><img src="https://img.shields.io/github/stars/ilyasstrougouty/antiflow?style=flat-square&color=e05d44&labelColor=555555" alt="Stars" /></a>
+  <a href="https://github.com/ilyasstrougouty/antiflow"><img src="https://img.shields.io/badge/open%20source-yes-4cc61e?style=flat-square&labelColor=555555" alt="Open Source" /></a>
+  <a href="https://github.com/ilyasstrougouty/antiflow/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-4cc61e?style=flat-square&labelColor=555555" alt="License: MIT" /></a>
   <br /><br />
 </div>
 
