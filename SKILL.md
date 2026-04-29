@@ -35,7 +35,7 @@ What counts as business logic for a given role:
 |----------|---------------------------------------|
 | `backend` | authentication handlers, database query logic, API endpoint business rules, data validation, service layer methods |
 | `frontend` | component state logic, event handler implementations, data-fetching hooks, form validation, UI interaction flows |
-| `fullstack` | all of the above |
+| `fullstack` | authentication handlers, database query logic, API endpoint business rules, component state logic, event handler implementations, data-fetching hooks, form validation, UI interaction flows |
 | `mobile` | navigation logic, local state management, device API integrations (camera, GPS), gesture handlers, offline sync logic |
 | `devops` | deployment scripts, CI/CD pipeline logic, infra-as-code resource definitions, monitoring alert rules |
 | `data engineer`| ETL pipeline transformations, data warehouse schema design, data cleansing logic, streaming aggregation rules |
