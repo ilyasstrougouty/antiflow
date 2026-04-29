@@ -3,6 +3,10 @@
   <h1>antiflow</h1>
   <blockquote><b>Vibecoding is a skill issue. Antiflow is the fix.</b></blockquote>
   <br />
+  <a href="https://github.com/ilyasstrougouty/antiflow/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ilyasstrougouty/antiflow" alt="License" /></a>
+  <a href="https://github.com/ilyasstrougouty/antiflow/stargazers"><img src="https://img.shields.io/github/stars/ilyasstrougouty/antiflow?style=social" alt="Stars" /></a>
+  <a href="https://www.npmjs.com/package/skills"><img src="https://img.shields.io/badge/npx-skills-black" alt="npx skills" /></a>
+  <br /><br />
 </div>
 
 > **Vibe coding is making developers lazy.**
@@ -22,6 +26,20 @@ It scaffolds boilerplate. It configures environments. It **refuses** to write yo
 3. **Stubs**. Domain logic belonging to you gets stubbed: `// TODO: [USER]`.
 4. **Ticket Queue**. Antiflow centralizes all stubs into a `TODO.md` file.
 5. **Refusal**. Ask the AI to complete your assigned tasks. It will refuse.
+
+## ❓ Why Antiflow?
+
+AI coding assistants are getting better at writing code. That's the problem.
+
+| Without Antiflow | With Antiflow |
+|---|---|
+| AI writes everything. You review. | AI scaffolds. You build. |
+| You forget how to think through problems. | You stay sharp on what matters. |
+| The codebase is the AI's — you just deploy it. | The logic is yours — you own it. |
+| "I'll just ask the AI" becomes your default. | The hard problems stay on your plate. |
+
+Antiflow isn't anti-AI. It's anti-atrophy.
+
 
 ## 🚀 Usage
 
@@ -52,7 +70,7 @@ The AI will intercept your request and ask for the following parameters before i
 | `LEVEL` | `junior` / `mid` / `senior` | **Required** | Calibrates task difficulty and hint depth. |
 | `PROJECT` | *String* | **Required** | Brief description of the project. |
 | `STACK` | *String* / `no preference` | Inferred | Target language or framework. |
-| `AI_ASSISTANCE` | `0%` / `50%` / `100%` | `0%` | Ratio of domain logic the AI will write. |
+| `AI_ASSISTANCE` | `0–100%` (any value, e.g. `30%`) | `0%` | Ratio of domain logic the AI will write. |
 
 ### 4. Build
 The AI will scaffold the project, generate a `TODO.md` file, and assign the core business logic to **you**. If you try to ask the AI to complete your assigned tickets, it will refuse.

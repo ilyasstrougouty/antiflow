@@ -17,7 +17,7 @@ Before writing a single file, collect the following from the user if not already
 | `{LEVEL}` | `junior`, `mid`, `senior` | Yes |
 | `{PROJECT}` | brief description of what they are building | Yes |
 | `{STACK}` | language, framework (or "no preference" to let AI choose) | Optional — infer from `{PROJECT}` if omitted |
-| `{AI_ASSISTANCE}`| `0%` (the Ai doesn't touch your domain logic, just builds the frame), `50%` (we're sharing the work, ai does 50% of the logic), `100%` (the Ai does all the logic, but still follows the antiflow protocol) | Optional — default `0%` |
+| `{AI_ASSISTANCE}`| Any value from `0%` to `100%` (e.g. `30%`). Represents the proportion of domain logic the AI will write. At `0%` the AI touches none of your logic. At `100%` the AI writes all of it but still follows the stub and TODO.md protocol. | Optional — default `0%` |
 
 Do not proceed past intake until all required parameters are confirmed.
 
