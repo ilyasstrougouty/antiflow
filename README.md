@@ -39,6 +39,14 @@ AI coding assistants are getting better at writing code. That's the problem.
 
 Antiflow isn't anti-AI. It's anti-atrophy.
 
+## ✨ Key Features
+
+- **🛡️ State Persistence**: Antiflow saves your configuration in `.antiflow.json`. Start a new chat, and it instantly remembers your role and project context.
+- **📈 Skill Retention Score**: Get a "Sweat Equity" summary at the end of your session. Track how much domain logic you wrote vs. the AI.
+- **🎓 Student Mode**: A Socratic tutoring mode where the AI refuses to give code answers and instead provides documentation and leading questions.
+- **📋 Ticket-Driven Development**: All AI-refused logic is automatically centralized into a `TODO.md` file with file paths and line numbers.
+
+
 
 ## 🚀 Usage
 
