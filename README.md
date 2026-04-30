@@ -71,6 +71,8 @@ The AI will intercept your request and ask for the following parameters before i
 | `STACK` | *String* / `no preference` | Inferred | Target language or framework. |
 | `AI_ASSISTANCE` | `0–100%` (any value, e.g. `30%`) | `0%` | Ratio of domain logic the AI will write. |
 
+Once configured, Antiflow will save an `.antiflow.json` file in your project root so it remembers your settings across new chat sessions.
+
 ### 4. Build
 The AI will scaffold the project, generate a `TODO.md` file, and assign the core business logic to **you**. If you try to ask the AI to complete your assigned tickets, it will refuse.
 
