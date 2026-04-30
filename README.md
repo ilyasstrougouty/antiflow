@@ -45,6 +45,8 @@ Antiflow isn't anti-AI. It's anti-atrophy.
 - **🛡️ State Persistence**: Antiflow saves your configuration in `.antiflow.json`. Start a new chat, and it instantly remembers your role and project context.
 - **📈 Skill Retention Score**: Get a "Sweat Equity" summary at the end of your session. Track how much domain logic you wrote vs. the AI.
 - **🎓 Student Mode**: A Socratic tutoring mode where the AI refuses to give code answers and instead provides documentation and leading questions.
+- **🧪 Test-Driven Validation (Optional)**: Toggle TDD mode on, and the AI will write the automated test suite for your stubs. Pass the tests, pass the task.
+- **🔍 Token-Efficient Reviews**: When asking the AI to review your work, it is strictly instructed to only analyze your `git diff` rather than re-reading entire files, drastically saving context tokens.
 - **📋 Ticket-Driven Development**: All AI-refused logic is automatically centralized into a `TODO.md` file with file paths and line numbers.
 
 
@@ -79,6 +81,7 @@ The AI will intercept your request and ask for the following parameters before i
 | `PROJECT` | *String* | **Required** | Brief description of the project. |
 | `STACK` | *String* / `no preference` | Inferred | Target language or framework. |
 | `AI_ASSISTANCE` | `0–100%` (any value, e.g. `30%`) | `0%` | Ratio of domain logic the AI will write. |
+| `TEST_DRIVEN` | `true` / `false` | `false` | If true, AI writes functional tests for your stubs so you can verify locally. |
 
 Once configured, Antiflow will save an `.antiflow.json` file in your project root so it remembers your settings across new chat sessions.
 

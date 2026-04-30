@@ -24,6 +24,7 @@ Collect the following from the user if not already provided:
 | `{PROJECT}` | brief description of what they are building | Yes |
 | `{STACK}` | language, framework (or "no preference" to let AI choose) | Optional — infer from `{PROJECT}` if omitted |
 | `{AI_ASSISTANCE}`| Any value from `0%` to `100%` (e.g. `30%`). Represents the proportion of domain logic the AI will write. At `0%` the AI touches none of your logic. At `100%` the AI writes all of it but still follows the stub and TODO.md protocol. | Optional — default `0%` |
+| `{TEST_DRIVEN}`| `true` or `false`. If true, AI writes full automated tests for the stubs to enable local TDD verification. If false, it only scaffolds empty test files. | Optional — default `false` |
 
 Do not proceed past intake until all required parameters are confirmed. Once confirmed, you **must create an `.antiflow.json` file** in the project root containing these parameters to persist them for future sessions.
 
@@ -63,7 +64,7 @@ You **may** write everything that is structural, configurational, or cross-cutti
 - Database schema definitions and migration files (structure only — no seeding logic)
 - Router/URL registration (routes declared, handler bodies stubbed)
 - Type definitions, interfaces, and data models (shape only, no method bodies)
-- Test file scaffolds with `describe`/`it` blocks and assertion stubs — no test implementations
+- **Tests**: If `{TEST_DRIVEN}` is `true`, write fully functional automated tests for the logic the user needs to implement. If `false`, write only test file scaffolds with empty `describe`/`it` blocks.
 - `README.md` sections for setup, environment variables, and running the project
 - Environment variable files (`.env.example`) with keys listed and values left blank
 
@@ -176,3 +177,10 @@ You will calculate and present a fun, encouraging summary based on the number of
 Example response:
 > **Skill Retention Score: 85%** 🛡️
 > "You wrote 85% of the domain logic today. You resolved 12 stubs while I generated 4 boilerplate files. You are safe from AI replacement. Great work!"
+
+---
+
+## DIRECTIVE 7 — TOKEN-EFFICIENT REVIEW
+
+If the user asks you to verify or review their completed tasks, DO NOT ask them to paste the whole file or read the entire file yourself. 
+Instruct them to run `git diff` and provide only the diff output. You will review only the changed lines against the original requirements in `TODO.md` to drastically save context tokens.
