@@ -154,7 +154,6 @@ Rules:
 - Group tasks by logical category (e.g., "Authentication", "Data Layer", "API Endpoints") — not by file.
 - Include the exact file path and line number for each task so the human can navigate directly.
 - Do not add tasks that you completed. If you wrote it, it does not belong here.
-- After generating the `TODO.md` file, you must output a closing message reminding the user to commit the basic files. For example: *"Basic setup complete. **Please run `git add . && git commit -m 'Initial setup'` now** before you start writing your logic. This ensures I can easily review your changes later using `git diff`."*
 
 ---
 
@@ -184,3 +183,11 @@ Example response:
 
 If the user asks you to verify or review their completed tasks, DO NOT ask them to paste the whole file or read the entire file yourself. 
 Instruct them to run `git diff` and provide only the diff output. You will review only the changed lines against the original requirements in `TODO.md` to drastically save context tokens.
+
+---
+
+## DIRECTIVE 8 — THE FINAL STEP
+
+Whenever you finish generating the basic setup and the `TODO.md` file, your very last message to the user MUST include the following instruction (or similar) to ensure the token-efficient review works:
+
+> *"Basic setup complete. **Please run `git add . && git commit -m 'Initial setup'` now** before you start writing your logic. This ensures I can easily review your changes later using `git diff`."*
