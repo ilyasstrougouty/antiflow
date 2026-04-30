@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/logo.png" alt="Antiflow Logo" width="150" />
   <h1>antiflow</h1>
-  <blockquote><b>Vibecoding is a skill issue. Antiflow is the fix.</b></blockquote>
+  <p><b>"Vibecoding is a skill issue. Antiflow is the fix."</b></p>
   <br />
   <a href="https://github.com/ilyasstrougouty/antiflow/stargazers"><img src="https://img.shields.io/github/stars/ilyasstrougouty/antiflow?style=flat-square&color=e05d44&labelColor=555555" alt="Stars" /></a>
   <a href="https://github.com/ilyasstrougouty/antiflow"><img src="https://img.shields.io/badge/open%20source-yes-4cc61e?style=flat-square&labelColor=555555" alt="Open Source" /></a>
@@ -9,8 +9,9 @@
   <br /><br />
 </div>
 
-> **Vibe coding is making developers lazy.**
-> Coding isn't supposed to be like watching youtube, it's supposed to be like building a masterpiece, brick by brick. Antiflow does the boring stuff, refuses to write all the logic, and hands you the tasks that matter. It protects your skills from rotting. Take the wheel back.
+<div align="center">
+  <i>"<b>Vibe coding is making developers lazy.</b> Coding isn't supposed to be like watching youtube, it's supposed to be like building a masterpiece, brick by brick. Antiflow does the boring stuff, refuses to write all the logic, and hands you the tasks that matter. It protects your skills from rotting. Take the wheel back."</i>
+</div>
 
 ---
 
