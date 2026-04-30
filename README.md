@@ -18,14 +18,14 @@
 ## 🛑 The Core Protocol
 
 Antiflow is an AI coding protocol. It acts as your **AI Tech Lead**. 
-It scaffolds boilerplate. It configures environments. It **refuses** to write your core logic.
+It writes the basic setup. It configures your environment. It **refuses** to write your core logic.
 
 ## ⚙️ How It Works
 
 1. **Intake**. You provide your role, level, and AI assistance ratio.
-2. **Building Phase**. Antiflow builds the project skeleton (directories, configs, boilerplate).
-3. **Blocking Phase**. Domain logic belonging to you gets stubbed: `// TODO: [USER]`.
-4. **Tickets**. Antiflow centralizes all stubs into a `TODO.md` file.
+2. **Building Phase**. Antiflow builds the project structure (folders, settings, and basic code).
+3. **Blocking Phase**. The core features you need to build are left as blank placeholders: `// TODO: [USER]`.
+4. **Tickets**. Antiflow gathers all your placeholders into a `TODO.md` file.
 
 ## ❓ Why Antiflow?
 
@@ -33,19 +33,19 @@ AI coding assistants are getting better at writing code. That's the problem.
 
 | Without Antiflow | With Antiflow |
 |---|---|
-| AI writes everything. You review. | AI builds the squeleton. You build the logic. |
+| AI writes everything. You review. | AI builds the skeleton. You build the logic. |
 | You forget how to think through problems. | You stay sharp on what matters. |
 | The codebase is the AI's — you just deploy it. | The logic is yours — you own it. |
 | "I'll just ask the AI" becomes your default. | The hard problems stay on your plate. |
 
-Antiflow isn't anti-AI. It's anti-atrophy.
+Antiflow protects your coding skills.
 
 ## ✨ Key Features
 
 - **🛡️ State Persistence**: Antiflow saves your configuration in `.antiflow.json`. Start a new chat, and it instantly remembers your role and project context.
 - **📈 Skill Retention Score**: Get a "Sweat Equity" summary at the end of your session. Track how much domain logic you wrote vs. the AI.
 - **🎓 Student Mode**: A Socratic tutoring mode where the AI refuses to give code answers and instead provides documentation and leading questions.
-- **🧪 Test-Driven Validation (Optional)**: Toggle TDD mode on, and the AI will write the automated test suite for your stubs. Pass the tests, pass the task.
+- **🧪 Test-Driven Validation (Optional)**: Toggle TDD mode on, and the AI will write the automated tests for your placeholders. Pass the tests, pass the task.
 - **🔍 Token-Efficient Reviews**: When asking the AI to review your work, it is strictly instructed to only analyze your `git diff` rather than re-reading entire files, drastically saving context tokens.
 - **📋 Ticket-Driven Development**: All AI-refused logic is automatically centralized into a `TODO.md` file with file paths and line numbers.
 
@@ -86,7 +86,7 @@ The AI will intercept your request and ask for the following parameters before i
 Once configured, Antiflow will save an `.antiflow.json` file in your project root so it remembers your settings across new chat sessions.
 
 ### 4. Build
-The AI will scaffold the project, generate a `TODO.md` file, and assign the core business logic to **you**. If you try to ask the AI to complete your assigned tickets, it will refuse.
+The AI will set up the project, generate a `TODO.md` file, and assign the core business logic to **you**. If you try to ask the AI to complete your assigned tickets, it will refuse.
 
 ### 5. Updating
 To update Antiflow to the latest protocol version, simply run the installation command again. This will fetch the latest directives and overwrite your existing `SKILL.md`.
