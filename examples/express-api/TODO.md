@@ -4,14 +4,14 @@
 ## Role: Backend | Level: mid
 
 ### Authentication
-- [ ] `src/middleware/auth.js:8` — Verify the JWT token from the Authorization header and attach the decoded user to `req.user`
-- [ ] `src/controllers/authController.js:12` — Hash the plain-text password using bcrypt before saving to the database
-- [ ] `src/controllers/authController.js:28` — Compare the plain-text password against the stored hash and return a signed JWT on success
+- [ ] `src/middleware/auth.js:9` — Verify the JWT token from the Authorization header and attach the decoded user to `req.user`
+- [ ] `src/controllers/authController.js:8` — Hash the plain-text password using bcrypt before saving to the database
+- [ ] `src/controllers/authController.js:25` — Compare the plain-text password against the stored hash and return a signed JWT on success
 
 ### Data Layer
 - [ ] `src/models/User.js:18` — Write the Mongoose pre-save hook to enforce email uniqueness at the model level
-- [ ] `src/repositories/userRepository.js:14` — Query the database for a user by email; return null if not found
+- [ ] `src/repositories/userRepository.js:9` — Query the database for a user by email; return null if not found
 
 ### API Endpoints
-- [ ] `src/controllers/postController.js:9` — Implement pagination logic using `page` and `limit` query params
-- [ ] `src/controllers/postController.js:31` — Validate that the authenticated user owns the post before allowing update or delete
+- [ ] `src/controllers/postController.js:7` — Implement pagination logic using `page` and `limit` query params
+- [ ] `src/controllers/postController.js:21` — Validate that the authenticated user owns the post before allowing update or delete

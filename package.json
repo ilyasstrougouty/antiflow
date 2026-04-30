@@ -4,7 +4,7 @@
   "description": "An AI coding protocol that protects developers from skill atrophy by refusing to write core business logic.",
   "main": "SKILL.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Antiflow is an AI prompt protocol — no executable code to test. See SKILL.md for the directives.\""
   },
   "repository": {
     "type": "git",

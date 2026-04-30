@@ -1,8 +1,8 @@
 {
   "hooks": [
     {
-      "trigger": "scaffold, project, start, init",
-      "instruction": "Check if the user wants to use the Antiflow protocol. If yes, trigger the STEP 0 INTAKE from SKILL.md before scaffolding anything."
+      "trigger": "Activate Antiflow, activate antiflow protocol, activate the antiflow protocol, antiflow on, start antiflow",
+      "instruction": "The user wants to activate the Antiflow protocol. Trigger STEP 0 INTAKE from SKILL.md immediately before writing any code or files."
     }
   ]
 }

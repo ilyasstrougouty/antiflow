@@ -2,45 +2,126 @@
 Reclaiming Developer Flow in the Age of Vibe Coding
 
 ## Project Overview
-Antiflow is a developer tool designed to counter the "auto-pilot" nature of AI code generation (vibe coding). Instead of generating an entire application, Antiflow acts as an AI Tech Lead—scaffolding boilerplate code, configuring the environment, and generating strict tasks (via a `TODO.md` file) reserved explicitly for the human developer based on their chosen role and skill level.
+Antiflow is a developer tool designed to counter "vibe coding" — the pattern where AI generates an entire application while the developer just reviews. Instead of generating a finished project, Antiflow acts as an **AI Tech Lead**: it scaffolds the boilerplate, configures the environment, and then explicitly refuses to write the core business logic. That logic is handed to the developer as a structured task list.
 
-This document outlines two architectural approaches for building Antiflow. Part 1 details the lightweight, fast-to-market approach using a Claude Skill. Part 2 details the robust, highly structured Model Context Protocol (MCP) server approach.
+---
 
-## Part 1: The Simplified Architecture (Claude Skill)
-This is the leanest and fastest way to build Antiflow. By utilizing the Claude Code CLI plugin system, Antiflow is distributed as a lightweight metadata repository. It does not require hosting a backend server or a complex Node.js execution environment. Instead, it relies on advanced prompt injection to hijack Claude's default coding behavior.
+## How It Works
 
-### 1. Repository Layout
-The entire product lives inside a standard GitHub repository with a minimal footprint:
-
-```plaintext
-antiflow-skill/
-├── SKILL.md            # The core prompt and system instructions
-├── CLAUDE.md           # Project rules and contributor guidelines
-├── README.md           # Marketing, installation, and usage docs
-└── .claude/
-    └── hooks.json      # (Optional) Pre-configured session hooks
+```
+User activates Antiflow
+        │
+        ▼
+  STEP 0: INTAKE
+  ─────────────────────────────────────────
+  Antiflow reads or creates .antiflow.json
+  Collects: ROLE, LEVEL, PROJECT, STACK,
+            AI_ASSISTANCE, TEST_DRIVEN
+        │
+        ▼
+  DIRECTIVE 1: ANTI-SLOP OVERRIDE
+  ─────────────────────────────────────────
+  Forbidden: any domain logic matching {ROLE}
+  (e.g. auth handlers, DB queries, state logic)
+        │
+        ▼
+  DIRECTIVE 2: BASIC SETUP RULE
+  ─────────────────────────────────────────
+  Allowed: config files, entry points, schemas,
+           routes (stubbed), type definitions,
+           test scaffolds, .env.example
+        │
+        ▼
+  DIRECTIVE 3: INLINE PLACEHOLDER FORMAT
+  ─────────────────────────────────────────
+  // TODO: [USER] - <imperative task>
+  // CONTEXT: <contract this must satisfy>
+  // HINT: <only for {LEVEL}=junior>
+        │
+        ▼
+  DIRECTIVE 4: TODO.md GENERATOR
+  ─────────────────────────────────────────
+  All placeholders → centralized TODO.md
+  with file paths and exact line numbers
+        │
+        ▼
+  DIRECTIVE 5: REFUSAL PROTOCOL
+  ─────────────────────────────────────────
+  User asks AI to complete a stub →
+  "That task is yours. It's in TODO.md."
+        │
+        ▼
+  DIRECTIVE 6: GAMIFICATION
+  ─────────────────────────────────────────
+  Sweat Equity Summary at sprint end:
+  "You wrote 85% of the domain logic today."
+        │
+        ▼
+  DIRECTIVE 7: TOKEN-EFFICIENT REVIEW
+  ─────────────────────────────────────────
+  Reviews use `git diff` only —
+  not full file reads
+        │
+        ▼
+  DIRECTIVE 8: FINAL STEP
+  ─────────────────────────────────────────
+  Remind user to commit initial scaffold
+  so git diff reviews work correctly
 ```
 
-### 2. The Engine: SKILL.md
-The `SKILL.md` file is the "brain" of the simplified architecture. It contains strict directives that Claude reads before executing user commands:
+---
 
-- **Trigger Definition**: Users activate the skill by defining their role, e.g., `/antiflow --role backend --level mid`.
-- **The "Anti-Slop" Override**: Strict instructions forbidding Claude from writing core business logic related to the user's defined role.
-- **The Scaffolding Rule**: Claude is instructed to only write boilerplate, configuration files (e.g., webpack, package.json), and structural files.
-- **Inline Stubs**: Instructions forcing Claude to leave standardized comments in the code, such as `// TODO: [USER] - Implement authentication middleware.`
-- **The Todo Generator**: A strict format for outputting a `TODO.md` file at the root of the project with checkboxes for the human tasks.
+## Distribution Architecture
 
-### 3. Example System Prompt (SKILL.md Extract)
-```markdown
-# ANTIFLOW PROTOCOL ACTIVATED
-You are now acting as the Antiflow Tech Lead. The user's role is {ROLE} and seniority is {LEVEL}.
+Antiflow is distributed as a **lightweight GitHub repository** with no backend, no server, and no runtime. It is a pure prompt-injection tool.
 
-CRITICAL DIRECTIVES:
-1. DO NOT complete the entire project.
-2. Build the project structure, boilerplate, and all code OUTSIDE the user's {ROLE}.
-3. For tasks matching the user's {ROLE} and {LEVEL}, you must ONLY leave inline comments formatted exactly as: `// TODO: [USER] - <Task Description>`
-4. Upon completing the scaffold, you MUST generate a `TODO.md` file in the root directory containing a checklist of the human's tasks.
 ```
+antiflow/
+├── SKILL.md                          # Master protocol (8 directives, 194 lines)
+├── .agent/skills/antiflow/SKILL.md   # Mirror — installed by npx skills add ... -a antigravity
+├── .claude/hooks.json                # Claude Code hook: fires on Antiflow activation phrases
+├── .github/
+│   ├── ISSUE_TEMPLATE/               # Bug reports and adapter requests
+│   └── SECURITY.md                   # Responsible disclosure policy
+├── examples/
+│   └── express-api/                  # Full working example scaffold
+│       ├── TODO.md
+│       └── src/
+│           ├── controllers/
+│           ├── middleware/
+│           ├── models/
+│           └── repositories/
+├── assets/logo.png
+├── package.json                      # npm metadata (not executable)
+├── README.md
+├── CHANGELOG.md
+└── CONTRIBUTING.md
+```
+
+### Installation Flow
+
+```
+npx skills add ilyasstrougouty/antiflow -a <agent>
+        │
+        ▼
+  Fetches SKILL.md from GitHub raw content API
+        │
+        ▼
+  Writes to agent-specific path:
+  ┌──────────────────┬──────────────────────────────────────────────────┐
+  │ Agent            │ Destination                                      │
+  ├──────────────────┼──────────────────────────────────────────────────┤
+  │ claude-code      │ .claude/skills/antiflow/SKILL.md                 │
+  │ antigravity      │ ~/.gemini/antigravity/skills/antiflow/SKILL.md   │
+  │ cursor           │ .cursor/rules/antiflow.md                        │
+  │ windsurf         │ .windsurf/rules/antiflow.md                      │
+  │ github-copilot   │ .github/instructions/antiflow.instructions.md    │
+  │ cline            │ .cline/rules/antiflow.md                         │
+  │ default          │ .agent/skills/antiflow/SKILL.md                  │
+  └──────────────────┴──────────────────────────────────────────────────┘
+```
+
+---
 
 ## The Antiflow Manifesto
 > Vibe coding is making developers lazy. Coding isn't supposed to be like watching youtube, it's supposed to be like building a masterpiece, brick by brick. Antiflow does the boring stuff, refuses to write all the logic, and hands you the tasks that matter. It protects your skills from rotting. Take the wheel back.

@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+### Added
+- `.gitignore` to protect `.antiflow.json` session files and secrets from being committed.
+
+### Fixed
+- Synced `.agent/skills/antiflow/SKILL.md` with root `SKILL.md` (was missing Directives 6–8).
+- Broken file references in `examples/express-api/TODO.md` — added missing stub files.
+- `npm test` script no longer exits with error code 1.
+- `hooks.json` triggers tightened to prevent false positives in unrelated sessions.
+
+---
+
 ## [1.1.0] - 2026-04-29
 
 ### Added
