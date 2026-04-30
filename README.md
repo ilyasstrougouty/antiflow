@@ -22,10 +22,9 @@ It scaffolds boilerplate. It configures environments. It **refuses** to write yo
 ## ⚙️ How It Works
 
 1. **Intake**. You provide your role, level, and AI assistance ratio.
-2. **Scaffolding**. Antiflow builds the project skeleton (directories, configs, boilerplate).
-3. **Stubs**. Domain logic belonging to you gets stubbed: `// TODO: [USER]`.
-4. **Ticket Queue**. Antiflow centralizes all stubs into a `TODO.md` file.
-5. **Refusal**. Ask the AI to complete your assigned tasks. It will refuse.
+2. **Building Phase**. Antiflow builds the project skeleton (directories, configs, boilerplate).
+3. **Blocking Phase**. Domain logic belonging to you gets stubbed: `// TODO: [USER]`.
+4. **Tickets**. Antiflow centralizes all stubs into a `TODO.md` file.
 
 ## ❓ Why Antiflow?
 
@@ -33,7 +32,7 @@ AI coding assistants are getting better at writing code. That's the problem.
 
 | Without Antiflow | With Antiflow |
 |---|---|
-| AI writes everything. You review. | AI scaffolds. You build. |
+| AI writes everything. You review. | AI builds the squeleton. You build the logic. |
 | You forget how to think through problems. | You stay sharp on what matters. |
 | The codebase is the AI's — you just deploy it. | The logic is yours — you own it. |
 | "I'll just ask the AI" becomes your default. | The hard problems stay on your plate. |
@@ -67,7 +66,7 @@ The AI will intercept your request and ask for the following parameters before i
 | Parameter | Options | Default | Description |
 |-----------|---------|---------|-------------|
 | `ROLE` | `Backend` / `Frontend` / `Mobile` / `Data` / `Security` | **Required** | Defines the domain logic to protect. |
-| `LEVEL` | `junior` / `mid` / `senior` | **Required** | Calibrates task difficulty and hint depth. |
+| `LEVEL` | `student` / `junior` / `mid` / `senior` | **Required** | Calibrates task difficulty and hint depth. |
 | `PROJECT` | *String* | **Required** | Brief description of the project. |
 | `STACK` | *String* / `no preference` | Inferred | Target language or framework. |
 | `AI_ASSISTANCE` | `0–100%` (any value, e.g. `30%`) | `0%` | Ratio of domain logic the AI will write. |

@@ -1,0 +1,28 @@
+{
+  "name": "antiflow",
+  "version": "1.1.0",
+  "description": "An AI coding protocol that protects developers from skill atrophy by refusing to write core business logic.",
+  "main": "SKILL.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyasstrougouty/antiflow.git"
+  },
+  "keywords": [
+    "ai",
+    "protocol",
+    "coding",
+    "productivity",
+    "skill",
+    "antiflow",
+    "vibe-coding"
+  ],
+  "author": "Ilyas Strougouty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilyasstrougouty/antiflow/issues"
+  },
+  "homepage": "https://github.com/ilyasstrougouty/antiflow#readme"
+}
