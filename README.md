@@ -76,5 +76,12 @@ Once configured, Antiflow will save an `.antiflow.json` file in your project roo
 ### 4. Build
 The AI will scaffold the project, generate a `TODO.md` file, and assign the core business logic to **you**. If you try to ask the AI to complete your assigned tickets, it will refuse.
 
+### 5. Updating
+To update Antiflow to the latest protocol version, simply run the installation command again. This will fetch the latest directives and overwrite your existing `SKILL.md`.
+
+```bash
+npx skills add ilyasstrougouty/antiflow -a <your-agent>
+```
+
 ---
 **Get ready to write some code.**
