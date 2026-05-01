@@ -13,6 +13,12 @@
   <i>"<b>Vibe coding is making developers lazy.</b> Coding isn't supposed to be like watching youtube, it's supposed to be like building a masterpiece, brick by brick. Antiflow does the boring stuff, refuses to write all the logic, and hands you the tasks that matter. It protects your skills from rotting. Take the wheel back."</i>
 </div>
 
+<br />
+
+<div align="center">
+  <img src="assets/showcase.gif" alt="Antiflow Showcase" width="800" />
+</div>
+
 ---
 
 ## 🛑 The Core Protocol
