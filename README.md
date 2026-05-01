@@ -15,9 +15,7 @@
 
 <br />
 
-<div align="center">
-  <img src="assets/showcase.gif" alt="Antiflow Showcase" />
-</div>
+https://github.com/ilyasstrougouty/antiflow/raw/main/assets/showcase.mp4
 
 ---
 
