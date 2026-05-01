@@ -16,7 +16,7 @@
 <br />
 
 <div align="center">
-  <img src="assets/showcase.gif" alt="Antiflow Showcase" width="800" />
+  <video src="assets/showcase.mp4" autoplay loop muted playsinline width="800"></video>
 </div>
 
 ---
