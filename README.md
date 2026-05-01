@@ -15,7 +15,7 @@
 
 <br />
 
-https://github.com/ilyasstrougouty/antiflow/raw/main/assets/showcase.mp4
+<video src="./assets/showcase.mp4" autoplay loop muted playsinline width="800"></video>
 
 ---
 
