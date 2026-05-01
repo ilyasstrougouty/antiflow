@@ -17,8 +17,10 @@
 
 <br />
 
+<br />
+
 <div align="center">
-  <img src="assets/showcase_v2.gif" alt="Antiflow Showcase" width="800" />
+  <video src="https://github.com/ilyasstrougouty/antiflow/raw/main/assets/showcase.mp4" autoplay loop muted width="100%"></video>
 </div>
 
 ---
