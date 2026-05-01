@@ -20,7 +20,7 @@
 <br />
 
 <div align="center">
-  <video src="https://github.com/ilyasstrougouty/antiflow/raw/main/assets/showcase.mp4" autoplay loop muted width="100%"></video>
+  <video src="https://github.com/user-attachments/assets/e867a56f-46d1-4991-9557-37781f289b71" autoplay loop muted width="100%"></video>
 </div>
 
 ---
