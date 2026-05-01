@@ -18,7 +18,7 @@
 <br />
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/e213c9ba-2186-404a-b01b-6be4d81da64a" width="800" />
+  <img src="assets/showcase.gif" alt="Antiflow Showcase" width="800" />
 </div>
 
 ---
