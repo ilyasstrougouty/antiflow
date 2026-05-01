@@ -16,7 +16,7 @@
 <br />
 
 <div align="center">
-  https://github.com/ilyasstrougouty/antiflow/raw/main/assets/showcase.mp4
+  <img src="assets/showcase.gif" alt="Antiflow Showcase" />
 </div>
 
 ---
@@ -41,7 +41,7 @@ AI coding assistants are getting better at writing code. That's the problem.
 |---|---|
 | AI writes everything. You review. | AI builds the skeleton. You build the logic. |
 | You forget how to think through problems. | You stay sharp on what matters. |
-| The codebase is the AI's — you just deploy it. | The logic is yours — you own it. |
+| The codebase is the AI's - you just deploy it. | The logic is yours - you own it. |
 | "I'll just ask the AI" becomes your default. | The hard problems stay on your plate. |
 
 Antiflow protects your coding skills.
