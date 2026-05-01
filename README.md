@@ -18,7 +18,7 @@
 <br />
 
 <div align="center">
-  <img src="assets/showcase.gif" alt="Antiflow Showcase" width="800" />
+  <img src="assets/showcase_v2.gif" alt="Antiflow Showcase" width="800" />
 </div>
 
 ---
